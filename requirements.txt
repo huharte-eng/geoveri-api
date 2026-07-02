@@ -1,6 +1,5 @@
 fastapi>=0.110
 uvicorn[standard]>=0.27
 scikit-learn==1.8.0
-xgboost==3.3.0
 pandas
 joblib
