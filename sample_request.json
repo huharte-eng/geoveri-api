@@ -1,0 +1,15 @@
+{
+  "Rainfall_mm": 45.0,
+  "Rain_Lag3_mm": 80.0,
+  "Rain_Lag7_mm": 150.0,
+  "Rain_Lag14_mm": 240.0,
+  "Rain_Lag30_mm": 310.0,
+  "Distance_to_Road_m": 60.0,
+  "Distance_to_River_m": 90.0,
+  "Elevation_m": 300.0,
+  "Slope_deg": 30,
+  "Aspect_deg": 210.0,
+  "Curvature": 0.8,
+  "Landcover": "Bare",
+  "Soil_Type": "Clay"
+}

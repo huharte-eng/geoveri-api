@@ -1,0 +1,70 @@
+{
+  "best_model": "Random Forest",
+  "random_seed": 42,
+  "train_size": 1988,
+  "test_size": 498,
+  "numeric_features": [
+    "Rainfall_mm",
+    "Rain_Lag3_mm",
+    "Rain_Lag7_mm",
+    "Rain_Lag14_mm",
+    "Rain_Lag30_mm",
+    "Distance_to_Road_m",
+    "Distance_to_River_m",
+    "Elevation_m",
+    "Slope_deg",
+    "Aspect_deg",
+    "Curvature"
+  ],
+  "categorical_features": [
+    "Landcover",
+    "Soil_Type"
+  ],
+  "results": {
+    "Logistic Regression": {
+      "cv_accuracy_mean": 0.9492,
+      "cv_accuracy_std": 0.0135,
+      "test_accuracy": 0.9217,
+      "precision": 0.9449,
+      "recall": 0.8956,
+      "f1": 0.9196,
+      "roc_auc": 0.9876
+    },
+    "Random Forest": {
+      "cv_accuracy_mean": 0.9789,
+      "cv_accuracy_std": 0.0094,
+      "test_accuracy": 0.9859,
+      "precision": 1.0,
+      "recall": 0.9719,
+      "f1": 0.9857,
+      "roc_auc": 0.9978
+    },
+    "XGBoost": {
+      "cv_accuracy_mean": 0.9829,
+      "cv_accuracy_std": 0.007,
+      "test_accuracy": 0.9799,
+      "precision": 0.9959,
+      "recall": 0.9639,
+      "f1": 0.9796,
+      "roc_auc": 0.9949
+    },
+    "SVM": {
+      "cv_accuracy_mean": 0.9587,
+      "cv_accuracy_std": 0.0103,
+      "test_accuracy": 0.9518,
+      "precision": 0.9668,
+      "recall": 0.9357,
+      "f1": 0.951,
+      "roc_auc": 0.9904
+    },
+    "MLP Neural Network": {
+      "cv_accuracy_mean": 0.9623,
+      "cv_accuracy_std": 0.0058,
+      "test_accuracy": 0.9478,
+      "precision": 0.9442,
+      "recall": 0.9518,
+      "f1": 0.948,
+      "roc_auc": 0.9914
+    }
+  }
+}

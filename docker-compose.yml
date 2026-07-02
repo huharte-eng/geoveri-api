@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  geoveri-api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - GEOVERI_API_KEYS=${GEOVERI_API_KEYS}
+      - GEOVERI_RATE_LIMIT_PER_MIN=60
+    volumes:
+      - ./requests.log:/app/requests.log
+    restart: unless-stopped

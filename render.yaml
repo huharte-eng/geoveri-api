@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: geoveri-slope-stability-api
+    runtime: docker
+    plan: free
+    envVars:
+      - key: GEOVERI_API_KEYS
+        sync: false
+      - key: GEOVERI_RATE_LIMIT_PER_MIN
+        value: "60"
+    healthCheckPath: /health
